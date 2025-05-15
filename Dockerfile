@@ -1,9 +1,8 @@
-LABEL org.opencontainers.image.source=https://github.com/hoenlab/immun-lumi-reader
-
-# Replace everything below this line.
-
 # Use a minimal base image
 FROM alpine:latest
+
+# Only keep the line below, replace everything else
+LABEL org.opencontainers.image.source=https://github.com/hoenlab/immun-lumi-reader
 
 # Create a simple script
 RUN echo -e '#!/bin/sh\n\necho "Hello, World!"' > /hello.sh
